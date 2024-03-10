@@ -1,0 +1,11 @@
+import "../style.css";
+import NextNProgress from "nextjs-progressbar";
+
+export default function App({ Component, pageProps }) {
+  return (
+    <>
+      <NextNProgress color={"#0076FF"} />
+      <Component {...pageProps} />
+    </>
+  );
+}
