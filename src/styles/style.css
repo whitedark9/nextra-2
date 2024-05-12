@@ -1,0 +1,268 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  svg {
+    @apply fill-current stroke-2;
+  }
+}
+
+@layer components {
+  /*Variant*/
+  .text-emphasis {
+    @apply text-black dark:text-white;
+  }
+  /*Text*/
+  .text-primary {
+    @apply text-light-primary-default dark:text-dark-primary-default;
+  }
+  .text-secondary {
+    @apply text-light-secondary-default dark:text-dark-secondary-default;
+  }
+  .text-success {
+    @apply text-light-success-default dark:text-dark-success-default;
+  }
+  .text-warning {
+    @apply text-light-warning-default dark:text-dark-warning-default;
+  }
+  .text-error {
+    @apply text-light-error-default dark:text-dark-error-default;
+  }
+  .text-info {
+    @apply text-light-info-default dark:text-dark-info-default;
+  }
+  .text-neutral {
+    @apply text-light-neutral-default dark:text-dark-neutral-default;
+  }
+  .text-primary-container {
+    @apply text-light-primary-container dark:text-dark-primary-container;
+  }
+  .text-secondary-container {
+    @apply text-light-secondary-container dark:text-dark-secondary-container;
+  }
+  .text-success-container {
+    @apply text-light-success-container dark:text-dark-success-container;
+  }
+  .text-warning-container {
+    @apply text-light-warning-container dark:text-dark-warning-container;
+  }
+  .text-error-container {
+    @apply text-light-error-container dark:text-dark-error-container;
+  }
+  .text-info-container {
+    @apply text-light-info-container dark:text-dark-info-container;
+  }
+  .text-neutral-container {
+    @apply text-light-neutral-container dark:text-dark-neutral-container;
+  }
+  .text-on-primary {
+    @apply text-light-primary-on-default dark:text-dark-primary-on-default;
+  }
+  .text-on-secondary {
+    @apply text-light-secondary-on-default dark:text-dark-secondary-on-default;
+  }
+  .text-on-success {
+    @apply text-light-success-on-default dark:text-dark-success-on-default;
+  }
+  .text-on-warning {
+    @apply text-light-warning-on-default dark:text-dark-warning-on-default;
+  }
+  .text-on-error {
+    @apply text-light-error-on-default dark:text-dark-error-on-default;
+  }
+  .text-on-info {
+    @apply text-light-info-on-default dark:text-dark-info-on-default;
+  }
+  .text-on-neutral {
+    @apply text-light-neutral-on-default dark:text-dark-neutral-on-default;
+  }
+  .text-on-primary-container {
+    @apply text-light-primary-on-container dark:text-dark-primary-on-container;
+  }
+  .text-on-secondary-container {
+    @apply text-light-secondary-on-container dark:text-dark-secondary-on-container;
+  }
+  .text-on-success-container {
+    @apply text-light-success-on-container dark:text-dark-success-on-container;
+  }
+  .text-on-warning-container {
+    @apply text-light-warning-on-container dark:text-dark-warning-on-container;
+  }
+  .text-on-error-container {
+    @apply text-light-error-on-container dark:text-dark-error-on-container;
+  }
+  .text-on-info-container {
+    @apply text-light-info-on-container dark:text-dark-info-on-container;
+  }
+  .text-on-neutral-container {
+    @apply text-light-neutral-on-container dark:text-dark-neutral-on-container;
+  }
+  /*Background*/
+  .bg-primary {
+    @apply bg-light-primary-default dark:bg-dark-primary-default;
+  }
+  .bg-secondary {
+    @apply bg-light-secondary-default dark:bg-dark-secondary-default;
+  }
+  .bg-success {
+    @apply bg-light-success-default dark:bg-dark-success-default;
+  }
+  .bg-warning {
+    @apply bg-light-warning-default dark:bg-dark-warning-default;
+  }
+  .bg-error {
+    @apply bg-light-error-default dark:bg-dark-error-default;
+  }
+  .bg-info {
+    @apply bg-light-info-default dark:bg-dark-info-default;
+  }
+  .bg-neutral {
+    @apply bg-light-neutral-default dark:bg-dark-neutral-default;
+  }
+  .bg-primary-container {
+    @apply bg-light-primary-container dark:bg-dark-primary-container;
+  }
+  .bg-secondary-container {
+    @apply bg-light-secondary-container dark:bg-dark-secondary-container;
+  }
+  .bg-success-container {
+    @apply bg-light-success-container dark:bg-dark-success-container;
+  }
+  .bg-warning-container {
+    @apply bg-light-warning-container dark:bg-dark-warning-container;
+  }
+  .bg-error-container {
+    @apply bg-light-error-container dark:bg-dark-error-container;
+  }
+  .bg-info-container {
+    @apply bg-light-info-container dark:bg-dark-info-container;
+  }
+  .bg-neutral-container {
+    @apply bg-light-neutral-container dark:bg-dark-neutral-container;
+  }
+  /*Border*/
+  .border-primary {
+    @apply border-light-primary-default dark:border-dark-primary-default;
+  }
+  .border-secondary {
+    @apply border-light-secondary-default dark:border-dark-secondary-default;
+  }
+  .border-success {
+    @apply border-light-success-default dark:border-dark-success-default;
+  }
+  .border-warning {
+    @apply border-light-warning-default dark:border-dark-warning-default;
+  }
+  .border-error {
+    @apply border-light-error-default dark:border-dark-error-default;
+  }
+  .border-info {
+    @apply border-light-info-default dark:border-dark-info-default;
+  }
+  .border-neutral {
+    @apply border-light-neutral-default dark:border-dark-neutral-default;
+  }
+  /*Button*/
+  .btn-icon {
+    @apply inline-flex flex-row items-center justify-center text-center text-base font-medium leading-none outline-none transition-[scale];
+  }
+  .btn {
+    @apply flex flex-row items-center justify-center gap-2 px-lg py-md text-center text-base font-medium leading-none outline-none transition-[scale] duration-fast;
+  }
+  .btn-sm {
+    @apply flex flex-row items-center justify-center gap-2 px-md py-sm text-center text-sm font-medium leading-none outline-none transition-[scale] duration-fast;
+  }
+  .btn-lg {
+    @apply flex flex-row items-center justify-center gap-2 px-xl py-lg text-center text-lg font-medium leading-none outline-none transition-[scale] duration-fast;
+  }
+  .btn-icon:active,
+  .btn:active,
+  .btn-sm:active,
+  .btn-lg:active {
+    @apply scale-96;
+  }
+  .btn-icon:hover,
+  .btn:hover,
+  .btn-sm:hover,
+  .btn-lg:hover {
+    @apply brightness-hover;
+  }
+  .btn-icon:disabled,
+  .btn:disabled,
+  .btn-sm:disabled,
+  .btn-lg:disabled {
+    @apply cursor-not-allowed brightness-disabled;
+  }
+  .btn:focus,
+  .btn-sm:focus,
+  .btn-lg:focus {
+    @apply ring-4;
+  }
+  /*Btn Mode*/
+  .btn-primary {
+    @apply bg-light-primary-default text-light-primary-on-default focus:ring-light-primary-default/25 dark:bg-dark-primary-default dark:text-dark-primary-on-default dark:focus:ring-dark-primary-default/25;
+  }
+  .btn-primary-outline {
+    @apply border-btn border-light-primary-default bg-transparent text-light-primary-default hover:bg-light-primary-default hover:text-light-primary-on-default focus:ring-light-primary-default/25 dark:border-dark-primary-default dark:bg-transparent dark:text-dark-primary-default dark:hover:bg-dark-primary-default dark:hover:text-dark-primary-on-default dark:focus:ring-dark-primary-default/25;
+  }
+  .btn-secondary {
+    @apply bg-light-secondary-default text-light-secondary-on-default focus:ring-light-secondary-default/25 dark:bg-dark-secondary-default dark:text-dark-secondary-on-default dark:focus:ring-dark-secondary-default/25;
+  }
+  .btn-secondary-outline {
+    @apply border-btn border-light-secondary-default bg-transparent text-light-secondary-default hover:bg-light-secondary-default hover:text-light-secondary-on-default focus:ring-light-secondary-default/25 dark:border-dark-secondary-default dark:bg-transparent dark:text-dark-secondary-default dark:hover:bg-dark-secondary-default dark:hover:text-dark-secondary-on-default dark:focus:ring-dark-secondary-default/25;
+  }
+  .btn-success {
+    @apply bg-light-success-default text-light-success-on-default focus:ring-light-success-default/25 dark:bg-dark-success-default dark:text-dark-success-on-default dark:focus:ring-dark-success-default/25;
+  }
+  .btn-success-outline {
+    @apply border-btn border-light-success-default bg-transparent text-light-success-default hover:bg-light-success-default hover:text-light-success-on-default focus:ring-light-success-default/25 dark:border-dark-success-default dark:bg-transparent dark:text-dark-success-default dark:hover:bg-dark-success-default dark:hover:text-dark-success-on-default dark:focus:ring-dark-success-default/25;
+  }
+  .btn-warning {
+    @apply bg-light-warning-default text-light-warning-on-default focus:ring-light-warning-default/25 dark:bg-dark-warning-default dark:text-dark-warning-on-default dark:focus:ring-dark-warning-default/25;
+  }
+  .btn-warning-outline {
+    @apply border-btn border-light-warning-default bg-transparent text-light-warning-default hover:bg-light-warning-default hover:text-light-warning-on-default focus:ring-light-warning-default/25 dark:border-dark-warning-default dark:bg-transparent dark:text-dark-warning-default dark:hover:bg-dark-warning-default dark:hover:text-dark-warning-on-default dark:focus:ring-dark-warning-default/25;
+  }
+  .btn-error {
+    @apply bg-light-error-default text-light-error-on-default focus:ring-light-error-default/25 dark:bg-dark-error-default 
+dark:text-dark-error-on-default dark:focus:ring-dark-error-default/25;
+  }
+  .btn-error-outline {
+    @apply border-btn border-light-error-default bg-transparent text-light-error-default hover:bg-light-error-default hover:text-light-error-on-default focus:ring-light-error-default/25 dark:border-dark-error-default dark:bg-transparent dark:text-dark-error-default dark:hover:bg-dark-error-default dark:hover:text-dark-error-on-default dark:focus:ring-dark-error-default/25;
+  }
+  .btn-info {
+    @apply bg-light-info-default text-light-info-on-default focus:ring-light-info-default/25 dark:bg-dark-info-default dark:text-dark-info-on-default dark:focus:ring-dark-info-default/25;
+  }
+  .btn-info-outline {
+    @apply border-btn border-light-info-default bg-transparent text-light-info-default hover:bg-light-info-default hover:text-light-info-on-default focus:ring-light-info-default/25 dark:border-dark-info-default dark:bg-transparent dark:text-dark-info-default dark:hover:bg-dark-info-default dark:hover:text-dark-info-on-default dark:focus:ring-dark-info-default/25;
+  }
+  .btn-neutral {
+    @apply bg-light-neutral-default text-light-neutral-on-default focus:ring-light-neutral-default/25 dark:bg-dark-neutral-default dark:text-dark-neutral-on-default dark:focus:ring-dark-neutral-default/25;
+  }
+  .btn-neutral-outline {
+    @apply border-btn border-light-neutral-default bg-transparent text-light-neutral-default hover:bg-light-neutral-default hover:text-light-neutral-on-default focus:ring-light-neutral-default/25 dark:border-dark-neutral-default dark:bg-transparent dark:text-dark-neutral-default dark:hover:bg-dark-neutral-default dark:hover:text-dark-neutral-on-default dark:focus:ring-dark-neutral-default/25;
+  }
+  /*Spinner*/
+  .fill-primary {
+    @apply fill-light-primary-default dark:fill-dark-primary-default;
+  }
+  .fill-secondary {
+    @apply fill-light-secondary-default dark:fill-dark-secondary-default;
+  }
+  .fill-success {
+    @apply fill-light-success-default dark:fill-dark-success-default;
+  }
+  .fill-warning {
+    @apply fill-light-warning-default dark:fill-dark-warning-default;
+  }
+  .fill-error {
+    @apply fill-light-error-default dark:fill-dark-error-default;
+  }
+  .fill-info {
+    @apply fill-light-info-default dark:fill-dark-info-default;
+  }
+  .fill-neutral {
+    @apply fill-light-neutral-default dark:fill-dark-neutral-default;
+  }
+}

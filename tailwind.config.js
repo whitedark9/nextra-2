@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+
+import { SAFE_LIST, TAILWIND_EXTEND } from "./src/constants/theme";
+
 module.exports = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-    './theme.config.tsx'
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}", "./theme.config.tsx"],
+  safelist: SAFE_LIST,
   theme: {
-    extend: {}
+    extend: TAILWIND_EXTEND,
   },
   plugins: [],
-  darkMode: 'class'
-}
+  darkMode: "class",
+};

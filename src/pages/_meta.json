@@ -1,0 +1,18 @@
+{
+  "index": {
+    "title": "Home",
+    "display": "hidden",
+    "theme": {
+      "typesetting": "article",
+      "toc": false,
+      "sidebar": false,
+      "breadcrumb": false,
+      "pagination": false
+    }
+  },
+  "404": {
+    "title": "404 Not Found",
+    "type": "page",
+    "theme": { "timestamp": false, "typesetting": "article" }
+  }
+}
